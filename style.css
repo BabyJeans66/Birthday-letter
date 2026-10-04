@@ -441,88 +441,6 @@ section {
 }
 
 
-/* =====================================
-   MEMORIES
-===================================== */
-
-.memories-section {
-
-    background: var(--navy);
-
-    flex-direction: column;
-
-    text-align: center;
-
-}
-
-.section-description {
-
-    color: #aab6c8;
-
-    max-width: 500px;
-
-    line-height: 1.6;
-
-    margin-bottom: 40px;
-
-}
-
-.gallery {
-
-    width: 100%;
-
-    max-width: 900px;
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 14px;
-
-}
-
-.photo-card {
-
-    background: var(--navy-light);
-
-    border-radius: 16px;
-
-    overflow: hidden;
-
-    text-align: left;
-
-    transition: 0.3s ease;
-
-}
-
-.photo-card:active {
-
-    transform: scale(0.97);
-
-}
-
-.photo-card img {
-
-    width: 100%;
-
-    aspect-ratio: 1 / 1;
-
-    object-fit: cover;
-
-    display: block;
-
-}
-
-.photo-caption {
-
-    padding: 13px;
-
-    font-size: 0.78rem;
-
-    color: #dbe4ef;
-
-}
-
 
 /* =====================================
    MUSIC
@@ -530,9 +448,9 @@ section {
 
 .music-section {
 
-    background: var(--cream);
+    background: var(--navy);
 
-    color: var(--text-dark);
+    color: var(--text-cream);
 
     flex-direction: column;
 
