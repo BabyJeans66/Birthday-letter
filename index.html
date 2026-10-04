@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website behave properly on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#081a33">
+
+    <title>Happy Birthday, Rociel ❤️</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================
+         FLOATING HEARTS
+    ====================================== -->
+
+    <div class="hearts-container"></div>
+
+
+    <!-- =====================================
+         HERO / OPENING
+    ====================================== -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-glow"></div>
+
+        <div class="hero-content">
+
+
+            <h1>
+                Happy Birthday,
+                <span>Rociel!!</span>
+            </h1>
+
+            <p class="hero-text">
+                Thought to make this website
+                kasi why not HAHAHA but sana
+                magustuhan mo
+            </p>
+
+            <button class="main-button" onclick="openLetter()">
+                Open
+                
+            </button>
+
+            <div class="scroll-hint">
+                ↓
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         BIRTHDAY MESSAGE
+    ====================================== -->
+
+    <section class="message-section hidden-section" id="letter">
+
+        <div class="section-label">
+            ✦ A little message
+        </div>
+
+        <h2>
+            For you,
+        </h2>
+
+        <div class="letter-card">
+
+            <div class="letter-heart">
+                ♥
+            </div>
+
+            <p>
+                <strong>HAPPY BIRTHDAY, BAKS! ❤️</strong>
+            </p>
+
+            <p>
+                I hope na you have a wonderful day, lalo na at
+                kaarawan mo ngayon. Thank you for being our friend,
+                and of course, for being my friend too.
+            </p>
+
+            <p>
+                I know I'm not the perfect friend, and sometimes
+                hindi kita napapansin — kind of a dumbahh part of
+                me HAHAHA — but I'm really sorry for that.
+            </p>
+
+            <p>
+                The truth is, I'm very, very grateful to have you
+                as a friend. I know I don't always show it, lalo
+                na last year HAHAHA, pero I really am.
+            </p>
+
+            <p>
+                I'm really glad na nakilala kita and that we became
+                friends. I hope na magkaroon ka ng magandang
+                birthday and that you get to enjoy your day with
+                the people who are important to you.
+            </p>
+
+            <p>
+                I wish na matupad yung mga dreams and wishes mo,
+                and may God always guide you and be with you
+                through everything.
+            </p>
+
+            <div class="special-line">
+                And please...
+                <br>
+                <strong>
+                    wag ka papa-"sst sst" sa labas ah.
+                    Lagi ka mag-ingat. 😭
+                </strong>
+            </div>
+
+            <div class="signature">
+                — Baks ❤️
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         MEMORIES
+    ====================================== -->
+
+    <section class="memories-section hidden-section" id="memories">
+
+        <div class="section-label">
+            ✦ Little memories
+        </div>
+
+        <h2>
+            Some memories
+        </h2>
+
+        <p class="section-description">
+            Just a few moments that are worth remembering.
+        </p>
+
+        <div class="gallery">
+
+            <div class="photo-card">
+                <img src="rociell.jpg" alt="Memory with Rociel">
+                <div class="photo-caption">
+                    WAHAHAH LALA TALAGA
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo2.jpg" alt="Memory with Rociel">
+                <div class="photo-caption">
+                    That was a good day.
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo3.jpg" alt="Memory with Rociel">
+                <div class="photo-caption">
+                    Definitely worth remembering.
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo4.jpg" alt="Memory with Rociel">
+                <div class="photo-caption">
+                    Glad I was there. ❤️
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         MUSIC
+    ====================================== -->
+
+    <section class="music-section hidden-section">
+
+        <div class="section-label">
+            Music for you
+        </div>
+
+        <h2>
+            Count on Me
+        </h2>
+
+        <p class="section-description dark-description">
+            Baka lang gusto mo makinig
+        </p>
+
+        <div class="music-card">
+
+            <div class="album-art">
+                ♥
+            </div>
+
+            <div class="song-info">
+
+                <h3>
+                    Count on Me
+                </h3>
+
+                <p>
+                    Bruno Mars
+                </p>
+
+            </div>
+
+            <button
+                class="play-button"
+                id="playButton"
+                onclick="toggleMusic()"
+                aria-label="Play music"
+            >
+                ▶
+            </button>
+
+        </div>
+
+        <!--
+            Put your audio file here:
+            music/best-part.mp3
+        -->
+
+        <audio id="birthdayMusic">
+            <source src="Bruno Mars - Count on Me.mp3" type="audio/mpeg">
+        </audio>
+
+        <p class="music-note">
+            Tap the button to play ♪
+        </p>
+
+    </section>
+
+
+    <!-- =====================================
+         INSIDE JOKE
+    ====================================== -->
+
+    <section class="joke-section hidden-section">
+
+        <div class="joke-card">
+
+            <div class="joke-icon">
+                
+            </div>
+
+            <p class="section-label">
+                ✦ Important reminder
+            </p>
+
+            <h2>
+                Rociel...
+            </h2>
+
+            <div class="quote">
+                Ice cream o Mystery Box?
+            </div>
+
+            <p>
+                pili ka lang di pede dalawa Ha
+            </p>
+
+            <div class="tiny-note">
+                Ps: ice cream nalang piliin mo, de joke lang hehe
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         FINAL SECTION
+    ====================================== -->
+
+    <section class="final-section hidden-section">
+
+        <div class="final-content">
+
+            <div class="big-heart">
+                ♥
+            </div>
+
+            <p class="final-small">
+                One last thing...
+            </p>
+
+            <h2>
+                Happy Birthday,
+                Rociel
+            </h2>
+
+            <p class="final-message">
+                Thanks for being one of the people
+                who made this year a little more memorable.
+            </p>
+
+            <p class="final-message">
+                I hope this year brings you lots of
+                happiness, good memories, and things
+                worth smiling about.
+            </p>
+
+            <h1>
+                Enjoy your day!
+            </h1>
+
+            <button class="replay-button" onclick="replayWebsite()">
+                ↻ Replay
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
